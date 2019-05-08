@@ -1,8 +1,8 @@
-# ProjectInnovate
+# Project Innovate
 Project Innovate IT1A NHL stenden
 
 ## Explanation of markdown
-[Here a link to a detailed explanation] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[Here a link to a detailed explanation](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
 *I am cursive*
 **I am bold**

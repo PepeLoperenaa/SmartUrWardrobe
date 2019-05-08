@@ -1,11 +1,15 @@
 # Project Innovate
 Project Innovate IT1A NHL stenden
 
+<br><br>
 ## Explanation of markdown
 [Here a link to a detailed explanation](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 
-*I am cursive*
-**I am bold**
+<br><br>
+*I am cursive* <br>
+**I am bold** <br>
+
+**These are some headings**
 
 # I am an h1
 ## I am an h2
@@ -13,6 +17,7 @@ Project Innovate IT1A NHL stenden
 #### I am an h4
 ##### ... and on it goes
 
+<br><br>
 This is how you make code blocks:
 
 ```java
@@ -33,6 +38,6 @@ This is how you make code blocks:
  }
 ``` 
 
-> **This is a quote block**
-> Some more to read and it continues
-> with *something cursive* ... yeaaaah!
+> **This is a quote block** <br>
+> Some more to read and it continues <br>
+> with *something cursive* ... yeaaaah! <br>

@@ -28,7 +28,6 @@ For the following open Command Prompt and follow steps as below.
 `pip install numpy`, <br>
 `pip install matplotlib`, <br> 
 `pip install cython`<br>
-<br>
 - Download [OpenCV](https://www.lfd.uci.edu/~gohlke/pythonlibs/) *(* **Find:** *opencv_python‑4.1.0‑cp36‑cp36m‑win_amd64.whl)*
 - Install OpenCV by with <br>`pip install path_to_file`<br> *! Replace path_to_file with the actual path to the file !* 
 - Download / clone the [Darkflow Repo](https://github.com/thtrieu/darkflow) and store locally <br> *! Don't forget to extract if you download !*

@@ -15,7 +15,24 @@ The first step of the setup is installing tensorflow-gpu. For this the steps bel
 - Download [cuDNN version 7.4 for CUDA 10.0](https://developer.nvidia.com/rdp/cudnn-archive) *! An account needs to be created in order to download cuDNN !*
 - Extract files from downloaded cuDNN folder and copy them into the corresponding folders in **C:\Program Files\NVIDIA GPU Computing Toolkit**
 - Install [Anaconda - Python 3.7 version](https://www.anaconda.com/distribution/)
+
+---
+For the following open Command Prompt and follow steps as below.
+- Type in `conda`, run, no errors should occur.
+- Now to make a virtual environment (ve) by running `conda create -n name python=3.6`  
+*! Replace ***name*** with whatever you want to call your ve. !*
+- Activate ve with the command: `activate name`
+- Now to install tensorflow-gpu on the ve: `pip install --ignore-installed --upgrade tensorflow-gpu`
+- Continue with installing additional libraries: 
+`pip install keras`, 
+`pip install numpy`, 
+`pip install matplotlib`, 
+`pip install cython`
+
 ## 2. Dataset and Annotations
+
 ## 3. Training
+Google "how to train your ai":
+![ai](https://pixel.nymag.com/imgs/daily/vulture/2019/02/19/19-how-to-train-dragon.w700.h700.jpg)
 ## 4. Inferring
 ## 5. Usage

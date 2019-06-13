@@ -14,20 +14,29 @@ The first step of the setup is installing tensorflow-gpu. For this the steps bel
 - Install [CUDA version 10.0](https://developer.nvidia.com/cuda-10.0-download-archive)
 - Download [cuDNN version 7.4 for CUDA 10.0](https://developer.nvidia.com/rdp/cudnn-archive) *! An account needs to be created in order to download cuDNN !*
 - Extract files from downloaded cuDNN folder and copy them into the corresponding folders in **C:\Program Files\NVIDIA GPU Computing Toolkit**
-- Install [Anaconda - Python 3.7 version](https://www.anaconda.com/distribution/)
+- Install [Anaconda](https://www.anaconda.com/distribution/) - Python 3.7 version
 
 ---
 For the following open Command Prompt and follow steps as below.
 - Type in `conda`, run, no errors should occur.
-- Make a virtual environment (ve) by running `conda create -n name python=3.6`  
-*! Replace ***name*** with whatever you want to call your ve. !*
-- Activate ve with the command: `activate name`
-- Now to install tensorflow-gpu on the ve: `pip install --ignore-installed --upgrade tensorflow-gpu`
-- Continue with installing additional libraries: 
-`pip install keras`, 
-`pip install numpy`, 
-`pip install matplotlib`, 
-`pip install cython`
+- Make a virtual environment (ve) by running <br>`conda create -n name python=3.6`  
+*! Replace ***name*** with whatever you want to call your ve !*
+- Activate ve with the command: <br>`activate name`
+- Now to install tensorflow-gpu on the ve: <br>`pip install --ignore-installed --upgrade tensorflow-gpu`
+- Continue with installing additional libraries: <br>
+`pip install keras`, <br>
+`pip install numpy`, <br>
+`pip install matplotlib`, <br> 
+`pip install cython`<br>
+<br>
+- Download [OpenCV](https://www.lfd.uci.edu/~gohlke/pythonlibs/) *(**Find:** opencv_python‑4.1.0‑cp36‑cp36m‑win_amd64.whl)*
+- Install OpenCV by with <br>`pip install path_to_file`<br> *! Replace path_to_file with the actual path to the file !* 
+- Download / clone the [Darkflow Repo](https://github.com/thtrieu/darkflow) and store locally <br>*! Don't forget to extract if you download !*
+- In cmd navigate into the darkflow folder and run <br>`python setup.py build_ext --inplace`
+- You should be able to find the folder **build** in the darkflow folder now
+- Download [YOLOv2 608x608 weights](https://pjreddie.com/darknet/yolov2/) 
+- Create a **bin** folder in the darkflow folder and put the downloaded weights in there
+
 
 ## 2. Dataset and Annotations
 

@@ -19,7 +19,7 @@ The first step of the setup is installing tensorflow-gpu. For this the steps bel
 ---
 For the following open Command Prompt and follow steps as below.
 - Type in `conda`, run, no errors should occur.
-- Now to make a virtual environment (ve) by running `conda create -n name python=3.6`  
+- Make a virtual environment (ve) by running `conda create -n name python=3.6`  
 *! Replace ***name*** with whatever you want to call your ve. !*
 - Activate ve with the command: `activate name`
 - Now to install tensorflow-gpu on the ve: `pip install --ignore-installed --upgrade tensorflow-gpu`

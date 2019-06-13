@@ -5,9 +5,10 @@ The explanation will be split up into the following steps:
 *1. Setup*, *2. Dataset and Annotations*, *3. Training*, *4. Inferring* and *5. Usage*.
 
 ## 1. Setup
-**System specifics:** OS = Windows 10; CPU = Intel i5 (have to look up at home); RAM = 8GB; GPU = NVIDIA GeForce GTX 1060, 6GB.
+**System specifics:** OS = Windows 10; CPU = Intel i5 (<-- will add it when I'm at home); RAM = 8GB; GPU = NVIDIA GeForce GTX 1060, 6GB.
   
-The first step of the setup is installing tensorflow-gpu. For this the steps below should be followed in the same order.
+### **Preperation**
+The first step of the setup is installing a virtual environment and the requirements to run tensorflow-gpu. For this the steps below should be followed in the same order.
 - Remove all NVIDIA Drivers
 - Install [Python version 3.6](https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64-webinstall.exe)
 - Install [Visual Studio](https://visualstudio.microsoft.com/de/vs/?rr=https%3A%2F%2Fwww.google.com%2F) in order to get Visual C++ build tools 
@@ -17,7 +18,7 @@ The first step of the setup is installing tensorflow-gpu. For this the steps bel
 - Install [Anaconda](https://www.anaconda.com/distribution/) - Python 3.7 version
 
 ---
-For the following open Command Prompt and follow steps as below.
+### **Open Command Prompt and follow steps as below.**
 - Type in `conda`, run, no errors should occur.
 - Make a virtual environment (ve) by running <br>`conda create -n name python=3.6`  
 *! Replace ***name*** with whatever you want to call your ve !*
@@ -37,9 +38,20 @@ For the following open Command Prompt and follow steps as below.
 - Download [YOLOv2 608x608 weights](https://pjreddie.com/darknet/yolov2/) 
 - Create a **bin** folder in the darkflow folder and put the downloaded weights in there
 
+---
+
+### **Test the setup**
+- Download a test [Video](https://www.videvo.net/video/people-cycling-over-westminster-bridge/5604/) and save it in the darkflow folder as video.mp4
+- In cmd run <br> `python flow --model cfg/yolo.cfg --load bin/yolo.weights --demo video.mp4 --gpu 0.8 --saveVideo` <br> *! Your names for the .cfg and .weights files might differ, look them up in corresponding folders !*
+- When done a new videofile (video.avi) should appear in the darkflow folder, start it, there should be bounding boxes, labels and confidence surrounding the objects
 
 ## 2. Dataset and Annotations
-
+- Create a new folder *e.g. training* in the darkflow folder and create another folder for your dataset *e.g. images*
+- Now download a lot of images for the object you want to train on. You can use the Google Chrome Extension [Fatkun](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en) for example.
+- Clean up: Remove images that you do not find suitable
+- Save all the images in the *images* folder you've created previously and rename them using [rename.py]() (<-- will add it when I'm at home)
+- Now use [box.py]() (<-- will add it when I'm at home) to draw the bounding boxes around the object in each image.
+- In an annotations folder an XML file, containing the position of the bounding box of the object, for each image will be stored. Use [rename.py]() (<-- will add it when I'm at home) for the annotations as well.
 ## 3. Training
 Google "how to train your ai":
 ![ai](https://pixel.nymag.com/imgs/daily/vulture/2019/02/19/19-how-to-train-dragon.w700.h700.jpg)

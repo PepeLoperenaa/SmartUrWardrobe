@@ -65,13 +65,13 @@ The first step of the setup is installing a virtual environment and the requirem
 - Change labels in labels.txt to the names of the objects you want to recognise
 <br><br>
 ```
-                             ___<br>
-                     /======/<br>
-            ____    //      \___       ,/<br>
-             | \\  //           :,   ./<br>
-     |_______|__|_//            ;:; /<br>
-    _L_____________\o           ;;;/<br>
-____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
+                             ___
+                     /======/
+            ____    //      \___       
+             | \\  //           :,   
+     |_______|__|_//            ;:; 
+    _L_____________\o           ;;;
+____(CCCCCCCCCCCCCC)_______________________________kg__
 
 ```
 <br><br>
@@ -82,13 +82,13 @@ ____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
 - Weights after training on wheelchairs: [Wheelchair Weights](https://drive.google.com/open?id=1ZjmDXtqJCVp05jWAcdNLtqIX3Hbeyrfw)
 <br><br>
 ```
-                             ___<br>
-                     /======/<br>
-            ____    //      \___       ,/<br>
-             | \\  //           :,   ./<br>
-     |_______|__|_//            ;:; /<br>
-    _L_____________\o           ;;;/<br>
-____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
+                             ___
+                     /======/
+            ____    //      \___       
+             | \\  //           :,   
+     |_______|__|_//            ;:; 
+    _L_____________\o           ;;;
+____(CCCCCCCCCCCCCC)_______________________________kg__
 
 ```
 <br><br>
@@ -98,13 +98,13 @@ ____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
 ## 5. Usage
 <br><br>
 ```
-                             ___<br>
-                     /======/<br>
-            ____    //      \___       ,/<br>
-             | \\  //           :,   ./<br>
-     |_______|__|_//            ;:; /<br>
-    _L_____________\o           ;;;/<br>
-____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
+                             ___
+                     /======/
+            ____    //      \___       
+             | \\  //           :,   
+     |_______|__|_//            ;:; 
+    _L_____________\o           ;;;
+____(CCCCCCCCCCCCCC)_______________________________kg__
 
 ```
 <br><br>

@@ -64,13 +64,13 @@ The first step of the setup is installing a virtual environment and the requirem
 - Download tiny-yolo-voc.weights from the [yolo website](https://pjreddie.com/darknet/yolov2/)
 - Change labels in labels.txt to the names of the objects you want to recognise
 <br><br>
-                             ___
-                     /======/
-            ____    //      \___       ,/
-             | \\  //           :,   ./
-     |_______|__|_//            ;:; /
-    _L_____________\o           ;;;/
-____(CCCCCCCCCCCCCC)____________-/___________________kg__
+                             ___<br>
+                     /======/<br>
+            ____    //      \___       ,/<br>
+             | \\  //           :,   ./<br>
+     |_______|__|_//            ;:; /<br>
+    _L_____________\o           ;;;/<br>
+____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
 
 <br><br>
 ...
@@ -79,13 +79,13 @@ ____(CCCCCCCCCCCCCC)____________-/___________________kg__
 ## 4. Inferring
 - Weights after training on wheelchairs: [Wheelchair Weights](https://drive.google.com/open?id=1ZjmDXtqJCVp05jWAcdNLtqIX3Hbeyrfw)
 <br><br>
-                             ___
-                     /======/
-            ____    //      \___       ,/
-             | \\  //           :,   ./
-     |_______|__|_//            ;:; /
-    _L_____________\o           ;;;/
-____(CCCCCCCCCCCCCC)____________-/___________________kg__
+                             ___<br>
+                     /======/<br>
+            ____    //      \___       ,/<br>
+             | \\  //           :,   ./<br>
+     |_______|__|_//            ;:; /<br>
+    _L_____________\o           ;;;/<br>
+____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
 
 <br><br>
 ...
@@ -93,13 +93,13 @@ ____(CCCCCCCCCCCCCC)____________-/___________________kg__
 
 ## 5. Usage
 <br><br>
-                             ___
-                     /======/
-            ____    //      \___       ,/
-             | \\  //           :,   ./
-     |_______|__|_//            ;:; /
-    _L_____________\o           ;;;/
-____(CCCCCCCCCCCCCC)____________-/___________________kg__
+                             ___<br>
+                     /======/<br>
+            ____    //      \___       ,/<br>
+             | \\  //           :,   ./<br>
+     |_______|__|_//            ;:; /<br>
+    _L_____________\o           ;;;/<br>
+____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
 
 <br><br>
 ...

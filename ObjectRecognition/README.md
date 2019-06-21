@@ -50,10 +50,20 @@ The first step of the setup is installing a virtual environment and the requirem
 - Now download a lot of images for the object you want to train on. You can use the Google Chrome Extension [Fatkun](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en) for example.
 - Clean up: Remove images that you do not find suitable
 - Save all the images in the *images* folder you've created previously and rename them using [rename.py](https://github.com/PepeLoperenaa/ProjectInnovate/edit/master/ObjectRecognition/rename.py)
-- Now use [box.py](https://github.com/PepeLoperenaa/ProjectInnovate/edit/master/ObjectRecognition/box.py) to draw the bounding boxes around the object in each image.
-- In an annotations folder an XML file, containing the position of the bounding box of the object, for each image will be stored. Use [rename.py](https://github.com/PepeLoperenaa/ProjectInnovate/edit/master/ObjectRecognition/rename.py) for the annotations as well.
+- Now use [box.py](https://github.com/PepeLoperenaa/ProjectInnovate/edit/master/ObjectRecognition/box.py) ([template](https://github.com/markjay4k/YOLO-series/blob/master/part7%20-%20generate_xml.py)) to draw the bounding boxes around the object in each image. <br> *(One after the other an image from the dataset will be opened. Draw the bounding box around the object in the image. **Start in the top-left corner!** If there are multiple objects press Ctrl to generate a new bounding box. When done press q to go to the next file.)* <br> Thanks to Mark Jay for the [template](https://github.com/markjay4k/YOLO-series/blob/master/part7%20-%20generate_xml.py) for box.py and for his [tutorial series](https://www.youtube.com/watch?v=PyjBd7IDYZs&list=PLX-LrBk6h3wSGvuTnxB2Kj358XfctL4BM). 
+- In an annotations folder an XML file, containing the position of the bounding box of the object, for each image will be stored. Use rename.py for the annotations as well. <br> *! Be sure to use the correct file extension (.xml) in rename.py !*
+
 ## 3. Training
-Google "how to train your ai":
-![ai](https://pixel.nymag.com/imgs/daily/vulture/2019/02/19/19-how-to-train-dragon.w700.h700.jpg)
+
+![ai](https://pixel.nymag.com/imgs/daily/vulture/2019/02/19/19-how-to-train-dragon.w300.h100.jpg)
+
+- First modify the cfg file: <br>
+    1. ) In */darkflow/cfg/* make a copy of *tiny-yolo-voc.cfg* <br>
+    2. ) In the last layer under [region] change the number of classes to your number of classes. <br>
+    3. ) In [convolutional], right above, change filters to *5 x (numberOfClasses + 5)*
+- Download tiny-yolo-voc.weights from the [yolo website](https://pjreddie.com/darknet/yolov2/)
+- Change labels in labels.txt to the names of the objects you want to recognise
+
+
 ## 4. Inferring
 ## 5. Usage

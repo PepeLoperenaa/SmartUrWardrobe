@@ -64,6 +64,7 @@ The first step of the setup is installing a virtual environment and the requirem
 - Download tiny-yolo-voc.weights from the [yolo website](https://pjreddie.com/darknet/yolov2/)
 - Change labels in labels.txt to the names of the objects you want to recognise
 <br><br>
+```
                              ___<br>
                      /======/<br>
             ____    //      \___       ,/<br>
@@ -72,6 +73,7 @@ The first step of the setup is installing a virtual environment and the requirem
     _L_____________\o           ;;;/<br>
 ____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
 
+```
 <br><br>
 ...
 *Sorry not finished, yet.*
@@ -79,6 +81,7 @@ ____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
 ## 4. Inferring
 - Weights after training on wheelchairs: [Wheelchair Weights](https://drive.google.com/open?id=1ZjmDXtqJCVp05jWAcdNLtqIX3Hbeyrfw)
 <br><br>
+```
                              ___<br>
                      /======/<br>
             ____    //      \___       ,/<br>
@@ -87,12 +90,14 @@ ____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
     _L_____________\o           ;;;/<br>
 ____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
 
+```
 <br><br>
 ...
 *Sorry not finished, yet.*
 
 ## 5. Usage
 <br><br>
+```
                              ___<br>
                      /======/<br>
             ____    //      \___       ,/<br>
@@ -101,6 +106,7 @@ ____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
     _L_____________\o           ;;;/<br>
 ____(CCCCCCCCCCCCCC)____________-/___________________kg__<br>
 
+```
 <br><br>
 ...
 *Sorry not finished, yet.*

@@ -66,4 +66,5 @@ The first step of the setup is installing a virtual environment and the requirem
 
 
 ## 4. Inferring
+- Weights after training on wheelchairs: [Wheelchair Weights](https://drive.google.com/open?id=1ZjmDXtqJCVp05jWAcdNLtqIX3Hbeyrfw)
 ## 5. Usage

@@ -63,8 +63,44 @@ The first step of the setup is installing a virtual environment and the requirem
     3. ) In [convolutional], right above, change filters to *5 x (numberOfClasses + 5)*
 - Download tiny-yolo-voc.weights from the [yolo website](https://pjreddie.com/darknet/yolov2/)
 - Change labels in labels.txt to the names of the objects you want to recognise
+<br><br>
+                             ___
+                     /======/
+            ____    //      \___       ,/
+             | \\  //           :,   ./
+     |_______|__|_//            ;:; /
+    _L_____________\o           ;;;/
+____(CCCCCCCCCCCCCC)____________-/___________________kg__
 
+<br><br>
+...
+*Sorry not finished, yet.*
 
 ## 4. Inferring
 - Weights after training on wheelchairs: [Wheelchair Weights](https://drive.google.com/open?id=1ZjmDXtqJCVp05jWAcdNLtqIX3Hbeyrfw)
+<br><br>
+                             ___
+                     /======/
+            ____    //      \___       ,/
+             | \\  //           :,   ./
+     |_______|__|_//            ;:; /
+    _L_____________\o           ;;;/
+____(CCCCCCCCCCCCCC)____________-/___________________kg__
+
+<br><br>
+...
+*Sorry not finished, yet.*
+
 ## 5. Usage
+<br><br>
+                             ___
+                     /======/
+            ____    //      \___       ,/
+             | \\  //           :,   ./
+     |_______|__|_//            ;:; /
+    _L_____________\o           ;;;/
+____(CCCCCCCCCCCCCC)____________-/___________________kg__
+
+<br><br>
+...
+*Sorry not finished, yet.*

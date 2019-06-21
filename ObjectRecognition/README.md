@@ -5,7 +5,7 @@ The explanation will be split up into the following steps:
 *1. Setup*, *2. Dataset and Annotations*, *3. Training*, *4. Inferring* and *5. Usage*.
 
 ## 1. Setup
-**System specifics:** OS = Windows 10; CPU = Intel i5 (<-- will add it when I'm at home); RAM = 8GB; GPU = NVIDIA GeForce GTX 1060, 6GB.
+**System specifics:** OS = Windows 10; CPU = Intel i5-7400 (3.00GHz); RAM = 8GB; GPU = NVIDIA GeForce GTX 1060, 6GB.
   
 ### **Preperation**
 The first step of the setup is installing a virtual environment and the requirements to run tensorflow-gpu. For this the steps below should be followed in the same order.

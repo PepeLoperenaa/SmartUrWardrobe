@@ -49,9 +49,9 @@ The first step of the setup is installing a virtual environment and the requirem
 - Create a new folder *e.g. training* in the darkflow folder and create another folder for your dataset *e.g. images*
 - Now download a lot of images for the object you want to train on. You can use the Google Chrome Extension [Fatkun](https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en) for example.
 - Clean up: Remove images that you do not find suitable
-- Save all the images in the *images* folder you've created previously and rename them using [rename.py](https://github.com/PepeLoperenaa/ProjectInnovate/edit/master/ObjectRecognition/README.md/rename.py)
-- Now use [box.py](https://github.com/PepeLoperenaa/ProjectInnovate/edit/master/ObjectRecognition/README.md/box.py) to draw the bounding boxes around the object in each image.
-- In an annotations folder an XML file, containing the position of the bounding box of the object, for each image will be stored. Use [rename.py](https://github.com/PepeLoperenaa/ProjectInnovate/edit/master/ObjectRecognition/README.md/rename.py) for the annotations as well.
+- Save all the images in the *images* folder you've created previously and rename them using [rename.py](https://github.com/PepeLoperenaa/ProjectInnovate/edit/master/ObjectRecognition/rename.py)
+- Now use [box.py](https://github.com/PepeLoperenaa/ProjectInnovate/edit/master/ObjectRecognition/box.py) to draw the bounding boxes around the object in each image.
+- In an annotations folder an XML file, containing the position of the bounding box of the object, for each image will be stored. Use [rename.py](https://github.com/PepeLoperenaa/ProjectInnovate/edit/master/ObjectRecognition/rename.py) for the annotations as well.
 ## 3. Training
 Google "how to train your ai":
 ![ai](https://pixel.nymag.com/imgs/daily/vulture/2019/02/19/19-how-to-train-dragon.w700.h700.jpg)

@@ -65,21 +65,21 @@ The first step of the setup is installing a virtual environment and the requirem
     3. ) In [convolutional], right above, change filters to *5 x (numberOfClasses + 5)*
 - Download tiny-yolo-voc.weights from the [yolo website](https://pjreddie.com/darknet/yolov2/)
 - Change labels in labels.txt to the names of the objects you want to recognise
-<br><br>
+- In the local darkflow folder in */darkflow/net/build.py* add the following code under the imports: <br>
+```python
+config = tf.ConfigProto()
+config.gpu_options.allow_growth = True
+sess = tf.Session(config=config)
 ```
-                             ___
-                     /======/
-            ____    //      \___       
-             | \\  //           :,   
-     |_______|__|_//            ;:; 
-    _L_____________\o           ;;;
-____(CCCCCCCCCCCCCC)_______________________________kg__
+- In cmd navigate to your darkflow folder and run the following: `python flow --model cfg/tiny-yolo-voc.cfg --load weights/tiny-yolo-voc.weights --train --annotation training/annotations --dataset training/wheelchairs --gpu 0.8 --batch 8 --epoch 1000` <br>
+*! Make sure the paths to your model, weights, annotations and dataset are correct, batch and epoch can be modified as well !* <br>
 
-```
-<br><br>
-...
-*Sorry not finished, yet.*
+There will be checkpoits stored every 250 steps, you can find them in the ckpt folder. If, for some reason the training stops and you want to resume from the last checkpoint replace the weights with -1.
 
+Since I ran out of space on the drive the darkflow folder was on, I wrote a [script to move files to another directory](https://github.com/PepeLoperenaa/ProjectInnovate/blob/master/ObjectRecognition/move.py).
+
+Every step you will be shown the moving avg loss. The closer to 0 that gets the better. At some point it will stop getting lower, though. In general if you've reached below 1 it should be good enough to use and you can stop training.
+  
 ## 4. Inferring
 - Weights after training on wheelchairs: [Wheelchair Weights](https://drive.google.com/open?id=1ZjmDXtqJCVp05jWAcdNLtqIX3Hbeyrfw)
 <br><br>

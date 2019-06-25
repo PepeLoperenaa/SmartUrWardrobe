@@ -2,7 +2,7 @@
 In this README you can find an explanation on how the object recognition algorithm was set up, trained and how it works.
 All mentioned files will be added to this folder or linked.
 The explanation will be split up into the following steps:
-*1. Setup*, *2. Dataset and Annotations*, *3. Training*, *4. Inferring* and *5. Usage*.
+*1. Setup*, *2. Dataset and Annotations*, *3. Training* and *4. Inferring*.
 
 ## 1. Setup
 **System specifics:** OS = Windows 10; CPU = Intel i5-7400 (3.00GHz); RAM = 8GB; GPU = NVIDIA GeForce GTX 1060, 6GB.
@@ -66,13 +66,13 @@ The first step of the setup is installing a virtual environment and the requirem
 - Download tiny-yolo-voc.weights from the [yolo website](https://pjreddie.com/darknet/yolov2/)
 - Change labels in labels.txt to the names of the objects you want to recognise
 - In the local darkflow folder in */darkflow/net/build.py* add the following code under the imports: <br>
-```python
-config = tf.ConfigProto()
-config.gpu_options.allow_growth = True
-sess = tf.Session(config=config)
-```
+  ```python
+  config = tf.ConfigProto()
+  config.gpu_options.allow_growth = True
+  sess = tf.Session(config=config)
+  ```
 - In cmd navigate to your darkflow folder and run the following: `python flow --model cfg/tiny-yolo-voc.cfg --load weights/tiny-yolo-voc.weights --train --annotation training/annotations --dataset training/wheelchairs --gpu 0.8 --batch 8 --epoch 1000` <br>
-*! Make sure the paths to your model, weights, annotations and dataset are correct, batch and epoch can be modified as well !* <br>
+*! Make sure the paths to your model, weights, annotations and dataset are correct, batch, gpu and epoch can be modified as well !* <br>
 
 There will be checkpoits stored every 250 steps, you can find them in the ckpt folder. If, for some reason the training stops and you want to resume from the last checkpoint replace the weights with -1.
 
@@ -81,34 +81,6 @@ Since I ran out of space on the drive the darkflow folder was on, I wrote a [scr
 Every step you will be shown the moving avg loss. The closer to 0 that gets the better. At some point it will stop getting lower, though. In general if you've reached below 1 it should be good enough to use and you can stop training.
   
 ## 4. Inferring
-- Weights after training on wheelchairs: [Wheelchair Weights](https://drive.google.com/open?id=1ZjmDXtqJCVp05jWAcdNLtqIX3Hbeyrfw)
-<br><br>
-```
-                             ___
-                     /======/
-            ____    //      \___       
-             | \\  //           :,   
-     |_______|__|_//            ;:; 
-    _L_____________\o           ;;;
-____(CCCCCCCCCCCCCC)_______________________________kg__
-
-```
-<br><br>
-...
-*Sorry not finished, yet.*
-
-## 5. Usage
-<br><br>
-```
-                             ___
-                     /======/
-            ____    //      \___       
-             | \\  //           :,   
-     |_______|__|_//            ;:; 
-    _L_____________\o           ;;;
-____(CCCCCCCCCCCCCC)_______________________________kg__
-
-```
-<br><br>
-...
-*Sorry not finished, yet.*
+- Open [OR-Wheelchairs.ipynb](https://github.com/PepeLoperenaa/ProjectInnovate/blob/master/ObjectRecognition/OR-Wheelchairs.ipynb) in Jupyter Notebook.
+- Specify which model (cfg) you use, as weights put in the number of the last checkpoint and specify the threshold *(e.g 0.3 means the model must be at least 30% confident to recognise it as object)*
+- Our last checkpoint after training on wheelchairs: [Wheelchair Weights](https://drive.google.com/open?id=1ZjmDXtqJCVp05jWAcdNLtqIX3Hbeyrfw)

@@ -12,7 +12,8 @@ The first step of the setup is installing a virtual environment and the requirem
 - Remove all NVIDIA Drivers
 - Install [Python version 3.6](https://www.python.org/ftp/python/3.6.0/python-3.6.0-amd64-webinstall.exe)
 - Install [Visual Studio](https://visualstudio.microsoft.com/de/vs/?rr=https%3A%2F%2Fwww.google.com%2F) in order to get Visual C++ build tools OR
-- Install [Visual Studio C++ Build Tools] and [Visual Studio Build Tools](https://download.microsoft.com/download/5/f/7/5f7acaeb-8363-451f-9425-68a90f98b238/visualcppbuildtools_full.exe) (https://download.microsoft.com/download/E/E/D/EEDF18A8-4AED-4CE0-BEBE-70A83094FC5A/BuildTools_Full.exe)
+- Install [Visual Studio C++ Build Tools](https://download.microsoft.com/download/5/f/7/5f7acaeb-8363-451f-9425-68a90f98b238/visualcppbuildtools_full.exe) 
+ and [Visual Studio Build Tools](https://download.microsoft.com/download/E/E/D/EEDF18A8-4AED-4CE0-BEBE-70A83094FC5A/BuildTools_Full.exe)
 - Install [CUDA version 10.0](https://developer.nvidia.com/cuda-10.0-download-archive)
 - Download [cuDNN version 7.4 for CUDA 10.0](https://developer.nvidia.com/rdp/cudnn-archive) *! An account needs to be created in order to download cuDNN !*
 - Extract files from downloaded cuDNN folder and copy them into the corresponding folders in **C:\Program Files\NVIDIA GPU Computing Toolkit**

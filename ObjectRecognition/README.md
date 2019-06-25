@@ -72,7 +72,7 @@ The first step of the setup is installing a virtual environment and the requirem
   sess = tf.Session(config=config)
   ```
 - In cmd navigate to your darkflow folder and run the following: `python flow --model cfg/tiny-yolo-voc.cfg --load weights/tiny-yolo-voc.weights --train --annotation training/annotations --dataset training/wheelchairs --gpu 0.8 --batch 8 --epoch 1000` <br>
-*! Make sure the paths to your model, weights, annotations and dataset are correct, batch, gpu and epoch can be modified as well !* <br>
+*! Make sure the paths to your model, weights, annotations and dataset are correct, batch, gpu and epoch can be modified !* <br>
 
 There will be checkpoits stored every 250 steps, you can find them in the ckpt folder. If, for some reason the training stops and you want to resume from the last checkpoint replace the weights with -1.
 
@@ -82,5 +82,5 @@ Every step you will be shown the moving avg loss. The closer to 0 that gets the 
   
 ## 4. Inferring
 - Open [OR-Wheelchairs.ipynb](https://github.com/PepeLoperenaa/ProjectInnovate/blob/master/ObjectRecognition/OR-Wheelchairs.ipynb) in Jupyter Notebook.
-- Specify which model (cfg) you use, as weights put in the number of the last checkpoint and specify the threshold *(e.g 0.3 means the model must be at least 30% confident to recognise it as object)*
+- Specify which model (cfg) you use, as weights put in the number of the last checkpoint and specify the threshold *(e.g 0.3 means the model must be at least 30% confident to recognise the object)*
 - Our last checkpoint after training on wheelchairs: [Wheelchair Weights](https://drive.google.com/open?id=1ZjmDXtqJCVp05jWAcdNLtqIX3Hbeyrfw)
